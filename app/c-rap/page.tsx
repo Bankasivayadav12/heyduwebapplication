@@ -1,24 +1,26 @@
 "use client";
 
+import CareerSection from "@/components/c-rap/career";
+import CareerCTA from "@/components/c-rap/career-cta";
+import ReportsSection from "@/components/c-rap/grow";
+import JobPathSection from "@/components/c-rap/jonpath";
+import LevelUpSection from "@/components/c-rap/levelup";
 import Image from "next/image";
 
 const steps = [
   {
-    id: "01",
-    title: "JOINING COLLEGE",
-    image: "/crap/step1.png",
+    id: "1",
+    image: "/c-rap/e-3.png",
     position: "left-bottom",
   },
   {
-    id: "02",
-    title: "BUY C-RAP",
-    image: "/crap/step2.png",
+    id: "2",
+    image: "/c-rap/e-4.png",
     position: "top",
   },
   {
-    id: "03",
-    title: "GET YOUR FIRST JOB",
-    image: "/crap/step3.png",
+    id: "3",
+    image: "/c-rap/e-5.png",
     position: "right-bottom",
   },
 ];
@@ -65,64 +67,119 @@ export default function CrapPage() {
         </div>
 
         {/* ================= RIGHT FLOW SECTION ================= */}
-        <div className="relative flex justify-center items-center h-[500px]">
+    
+        <div className="relative flex justify-center items-center h-[500px] ">
 
-          {/* Purple Glow Background */}
-          <div className="absolute bottom-0 w-[350px] h-[350px] bg-purple-200 rounded-full blur-3xl opacity-60"></div>
+            {/* Purple Glow Background */}
+            <div className="absolute bottom-0 w-[350px] h-[350px] bg-purple-200 blur-3xl opacity-60"></div>
 
-          {/* Center C-RAP Logo */}
-          <div className="relative z-10 w-32 h-32 bg-[#5a2ca0] rounded-full flex items-center justify-center shadow-xl">
-            <Image
-              src="/crap/logo.png"
-              alt="C-RAP"
-              width={70}
-              height={70}
-            />
-          </div>
+            {/* Center C-RAP Logo */}
+            <div className="relative z-10 w-32 h-32 bg-[#5a2ca0] rounded-full flex items-center justify-center shadow-xl">
+                <Image
+                src="/c-rap/e-8.png"
+                alt="C-RAP"
+                width={100}
+                height={100}
+                />
+            </div>
 
-          {/* Steps using map */}
-          {steps.map((step, index) => {
-            let positionClass = "";
+            {/* ================= STEP IMAGES ================= */}
 
-            if (step.position === "top") {
-              positionClass = "absolute -top-4";
-            }
-            if (step.position === "left-bottom") {
-              positionClass = "absolute left-0 bottom-10";
-            }
-            if (step.position === "right-bottom") {
-              positionClass = "absolute right-0 bottom-10";
-            }
+            {/* TOP IMAGE */}
+            <div className="absolute -top-4">
+                <Image
+                src="/c-rap/e-4.png"
+                alt=""
+                width={160}
+                height={160}
+                className="object-contain"
+                />
+            </div>
 
-            return (
-              <div
-                key={step.id}
-                className={`${positionClass} flex flex-col items-center`}
-              >
-                <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center">
-                  <Image
-                    src={step.image}
-                    alt={step.title}
-                    width={50}
-                    height={50}
-                  />
-                </div>
+            {/* LEFT BOTTOM IMAGE */}
+            <div className="absolute left-0 bottom-10">
+                <Image
+                src="/c-rap/e-3.png"
+                alt=""
+                width={160}
+                height={160}
+                className="object-contain"
+                />
+            </div>
 
-                <div className="mt-3 bg-white border border-purple-300 rounded-full px-4 py-2 shadow-md">
-                  <span className="text-xs text-gray-600 mr-2">
-                    {step.id}
-                  </span>
-                  <span className="text-xs font-medium text-gray-700">
-                    {step.title}
-                  </span>
-                </div>
-              </div>
-            );
-          })}
+            {/* RIGHT BOTTOM IMAGE */}
+            <div className="absolute right-0 bottom-10">
+                <Image
+                src="/c-rap/e-5.png"
+                alt=""
+                width={160}
+                height={160}
+                className="object-contain"
+                />
+            </div>
 
-        </div>
+            {/* ================= DOTTED ARROWS ================= */}
+
+            {/* Top to Center Arrow */}
+            <svg
+                className="absolute top-20"
+                width="120"
+                height="80"
+                viewBox="0 0 120 80"
+            >
+                <path
+                d="M60 0 C60 20, 60 40, 60 60"
+                stroke="#6b4eff"
+                strokeWidth="2"
+                strokeDasharray="6 6"
+                fill="none"
+                />
+            </svg>
+
+            {/* Left to Center Arrow */}
+            <svg
+                className="absolute left-20 bottom-28"
+                width="120"
+                height="80"
+                viewBox="0 0 120 80"
+            >
+                <path
+                d="M0 40 C30 40, 60 40, 90 40"
+                stroke="#6b4eff"
+                strokeWidth="2"
+                strokeDasharray="6 6"
+                fill="none"
+                />
+            </svg>
+
+            {/* Right to Center Arrow */}
+            <svg
+                className="absolute right-20 bottom-28"
+                width="120"
+                height="80"
+                viewBox="0 0 120 80"
+            >
+                <path
+                d="M120 40 C90 40, 60 40, 30 40"
+                stroke="#6b4eff"
+                strokeWidth="2"
+                strokeDasharray="6 6"
+                fill="none"
+                />
+            </svg>
+
+            </div>
+
 
       </div>
+
+      <CareerSection/>
+
+      <LevelUpSection/>
+
+      <ReportsSection/>
+      <JobPathSection/>
+      <CareerCTA/>
 
     </section>
   );
