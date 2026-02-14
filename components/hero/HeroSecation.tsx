@@ -3,6 +3,8 @@ import Button from "../ui/Button";
 import Image from "next/image";
 import TrustedSection from "./TrustedSection";
 import WhoWeAre from "./Whoweare";
+import Link from "next/link";
+
 
 export default function HeroSection() {
   return (
@@ -27,8 +29,8 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-8 flex gap-6">
-              <Button variant="primary">HEYDU</Button>
-              <Button variant="outline">C-RAP</Button>
+              <Button variant="primary"><Link href="/heydu">HEYDU</Link></Button>
+              <Button variant="outline"><Link href="/c-rap">C-RAP</Link></Button>
             </div>
           </div>
 
