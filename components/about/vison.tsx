@@ -59,7 +59,7 @@ export default function VisionMission() {
               </h3>
             </div>
 
-            <p className="text-gray-600 leading-[26px] text-[15px]">
+            <p className="text-gray-600 leading-6.5 text-[15px]">
               {item.description}
             </p>
           </div>

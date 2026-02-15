@@ -54,7 +54,7 @@ export default function UpdatesSection() {
             >
               {/* Text */}
               <p
-                className={`text-[14px] md:text-[15px] leading-[22px] md:leading-[24px] ${
+                className={`text-[14px] md:text-[15px] leading-5.5 md:leading-6 ${
                   item.highlight
                     ? "text-[#2f57c7] font-medium"
                     : "text-gray-600"

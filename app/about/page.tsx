@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden py-28 px-6 md:px-16">
 
         {/* ===== GRADIENT BACKGROUND ===== */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#f5f4f8] via-[#edeaf7] to-[#dcd3ef]" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#f5f4f8] via-[#edeaf7] to-[#dcd3ef]" />
 
         {/* ===== CIRCLE ARC LINES ===== */}
         <div className="absolute inset-0 flex justify-center items-end pointer-events-none">
@@ -33,7 +33,7 @@ export default function AboutPage() {
             About Us
           </h1>
 
-          <p className="text-gray-700 text-[15px] md:text-[18px] leading-[26px] md:leading-[30px]">
+          <p className="text-gray-700 text-[15px] md:text-[18px] leading-6.5 md:leading-7.5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
             since the 1500s.

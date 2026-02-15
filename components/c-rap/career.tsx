@@ -59,7 +59,7 @@ export default function CareerSection() {
         <div className="relative flex justify-center items-center">
 
           {/* Background Image (Grayscale) */}
-          <div className="relative w-[420px] h-[420px] overflow-hidden shadow-xl">
+          <div className="relative w-105 h-105 overflow-hidden shadow-xl">
             <Image
               src="/c-rap/career.png"   // replace with your grayscale background
               alt="Career Background"

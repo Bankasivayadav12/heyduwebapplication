@@ -13,7 +13,7 @@ export default function ExperienceSection() {
       <div className="max-w-7xl mx-auto">
 
         {/* Purple Container */}
-        <div className="bg-gradient-to-br from-[#613190] to-[#613190] 
+        <div className="bg-linear-to-br from-[#613190] to-[#613190] 
                         rounded-2xl px-8 md:px-16 py-16 text-white relative overflow-hidden">
 
           {/* ================= TOP CONTENT ================= */}
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
 
                 {/* Active Underline */}
                 {activeTab === tab && (
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white rounded-full"></span>
                 )}
               </button>
             ))}

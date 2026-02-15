@@ -32,7 +32,7 @@ export default function MeetOurTeam() {
               px-8 py-5
               rounded-[35px]
               shadow-[0_20px_40px_rgba(0,0,0,0.08)]
-              w-[260px]
+              w-65
             "
           >
             {/* Thin Top Purple Curve */}
@@ -42,9 +42,9 @@ export default function MeetOurTeam() {
                 top-0
                 left-0
                 right-0
-                h-[4px]
+                h-1
                 rounded-t-[35px]
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-[#8e5cff]
                 to-[#b57bff]
               "

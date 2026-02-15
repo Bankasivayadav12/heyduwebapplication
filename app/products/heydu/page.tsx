@@ -26,10 +26,10 @@ export default function HeyduPage() {
       </div>
 
       {/* ================= CENTER SECTION ================= */}
-      <div className="relative mt-32 max-w-7xl mx-auto h-[700px]">
+      <div className="relative mt-32 max-w-7xl mx-auto h-175">
 
         {/* Purple Half Circle */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[750px] h-[380px] bg-[#e7d9fb] rounded-t-full"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-187.5 h- bg-9.5 [#e7d9fb] rounded-t-full"></div>
 
         {/* PHONE */}
         <div className="absolute left-1/2 -translate-x-1/2 top-0 z-20">

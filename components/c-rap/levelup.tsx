@@ -72,7 +72,7 @@ export default function LevelUpSection() {
 
             {/* Bottom Color Strip */}
             <div
-              className={`absolute bottom-0 left-0 w-full h-[6px] rounded-b-xl ${item.bottomColor}`}
+              className={`absolute bottom-0 left-0 w-full h-1.5 rounded-b-xl ${item.bottomColor}`}
             ></div>
 
           </div>

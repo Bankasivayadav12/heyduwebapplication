@@ -90,7 +90,7 @@ export default function WhoWeAre() {
                   alt={item.title}
                   width={500}
                   height={320}
-                  className="rounded-2xl shadow-xl w-full max-w-[500px]"
+                  className="rounded-2xl shadow-xl w-full max-w-125"
                 />
               </div>
 
@@ -112,7 +112,7 @@ export default function WhoWeAre() {
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-gray-600 text-[14px] md:text-[15px] leading-[22px] md:leading-[24px]">
+                <p className="mt-3 text-gray-600 text-[14px] md:text-[15px] leading-5.5 md:leading-6">
                   {item.description}
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function WhoWeAre() {
       {/* =========================
           TESTIMONIAL SECTION
       ========================= */}
-        <section className="bg-[#f4f3f7] py-20 px-6 md:px-16">
+        <section className="bg-[#f4f3f7] py-10 px-16 md:px-90 gap-20">
 
       {/* Title */}
       <h2 className="text-center text-[22px] md:text-[32px] font-semibold text-black mb-12">
@@ -159,7 +159,7 @@ export default function WhoWeAre() {
             </h3>
 
             {/* Text */}
-            <p className="text-gray-600 text-[14px] leading-[22px]">
+            <p className="text-gray-600 text-[14px] leading-5.5">
               {item.text}
             </p>
           </div>

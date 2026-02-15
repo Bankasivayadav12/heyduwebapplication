@@ -18,28 +18,28 @@ export default function HeroSection() {
               One Smart Platform for Complete
             </p>
 
-            <h1 className="text-[40px] lg:text-[40px] leading-[45px] lg:leading-[64px] font-black text-[#2f57c7]">
+            <h1 className="text-[40px] lg:text-[40px] leading-11.25 lg:leading-16 font-black text-[#2f57c7]">
               Campus Management
             </h1>
 
-            <p className="mt-6 text-[20px] leading-[31px] text-[#6B6B6B] max-w-[690px]">
+            <p className="mt-6 text-[20px] leading-7.75 text-[#6B6B6B] max-w-172.5">
               Heydu helps colleges manage students, staff, alerts, events, and
               academic data effortlessly. One secure platform to access
               everything, anytime, anywhere.
             </p>
 
             <div className="mt-8 flex gap-6">
-              <Button variant="primary"><Link href="/heydu">HEYDU</Link></Button>
-              <Button variant="outline"><Link href="/c-rap">C-RAP</Link></Button>
+              <Button variant="primary"><Link href="/products/heydu">HEYDU</Link></Button>
+              <Button variant="outline"><Link href="/products/c-rap">C-RAP</Link></Button>
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="relative flex justify-center items-center min-h-[650px]">
+          <div className="relative flex justify-center items-center min-h-62.5">
             {/* Background Circles */}
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="absolute w-[650px] h-[650px] rounded-full bg-purple-300 opacity-30"></div>
-              <div className="absolute w-[500px] h-[500px] rounded-full bg-purple-400 opacity-40"></div>
+              <div className="absolute w-190.5 h-190.5 rounded-full bg-purple-300 opacity-30"></div>
+              <div className="absolute w-170.5 h-170.5 rounded-full bg-purple-400 opacity-40"></div>
             </div>
 
             {/* Phone */}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             </div>
 
             {/* Floating Card */}
-            <div className="absolute left-[-50px] top-[230px] w-[277px] h-[200px] bg-white rounded-[10px] shadow-[0_20px_40px_rgba(0,0,0,0.08)] p-6 z-30">
+            <div className="absolute left-12.5 top-57 w-69.25 h-50 bg-white rounded-[10px] shadow-[0_20px_40px_rgba(0,0,0,0.08)] p-6 z-30">
               <div className="space-y-4 text-[14px] text-gray-700">
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-[#97B3FF] rounded-full flex items-center justify-center">
@@ -94,7 +94,7 @@ export default function HeroSection() {
             </div>
 
             {/* Arrow */}
-            <div className="absolute left-[80px] top-[130px] z-20">
+            <div className="absolute left-20 top-32.5 z-20">
               <Image
                 src="/navbar/vector 2.png"
                 alt="Arrow"
@@ -105,13 +105,13 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full z-10 ">
+        <div className="absolute top-110 bottom-30 left-0 w-full z-10 ">
           <TrustedSection />
         </div>
       </section>
 
       {/* ===================== MOBILE HERO ===================== */}
-     <section className="block md:hidden relative overflow-hidden bg-gradient-to-b from-[#f3f2f7] via-[#edeaf7] to-[#e6e2f4] pt-6 pb-12">
+     <section className="block md:hidden relative overflow-hidden bg-lineart-to-b from-[#f3f2f7] via-[#edeaf7] to-[#e6e2f4] pt-6 pb-12">
 
             <div className="px-2 flex flex-col items-center text-center">
 
@@ -119,10 +119,10 @@ export default function HeroSection() {
                 <div className="relative flex justify-center items-center mb-35 mt-25 ">
 
                 {/* OUTER CIRCLE */}
-                <div className="absolute w-[560px] h-[560px] rounded-full bg-[#A65CEF] opacity-30"></div>
+                <div className="absolute w-140 h-140 rounded-full bg-[#A65CEF] opacity-30"></div>
 
                 {/* INNER CIRCLE */}
-                <div className="absolute w-[430px] h-[430px] rounded-full bg-[#A65CEF] opacity-40"></div>
+                <div className="absolute w-107.5 h-107.5 rounded-full bg-[#A65CEF] opacity-40"></div>
 
                 {/* PHONE */}
                 {/* PHONE */}
@@ -137,7 +137,7 @@ export default function HeroSection() {
 
 
                 {/* FLOATING CARD */}
-                <div className="absolute left-[0px] top-[120px] w-[190px] bg-white rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] p-4 z-20">
+                <div className="absolute left-0 top-30 w-47.5 bg-white rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] p-2 z-20">
 
                     <div className="space-y-3 text-[13px] text-gray-700">
 
@@ -166,7 +166,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* ARROW */}
-                <div className="absolute left-[80px] top-[60px] z-20">
+                <div className="absolute left-20 top-15 z-20">
                     <Image
                     src="/navbar/vector 2.png"
                     alt="Arrow"
@@ -179,15 +179,15 @@ export default function HeroSection() {
 
 
                 {/* TEXT CONTENT */}
-                <p className="self-start text-[#373737] text-[18px] font-medium mb-2">
+                <p className="self-start text-[#373737] text-[18px] font-medium mb">
                 One Smart Platform for complete
                 </p>
 
-                <h1 className="self-start text-[18px] leading-[34px] font-black text-[#2f57c7] mb-2">
+                <h1 className="self-start text-[18px] leading-8.5 font-black text-[#2f57c7] mb-2">
                 Campus Management
                 </h1>
 
-                <p className="text-[18px] leading-[26px] text-[#6B6B6B]  max-w-[650px] w-full break-words ">
+                <p className="text-[18px] leading-6.5 text-[#6B6B6B]  max-w-162.5 w-full wrap-break-words ">
                 Heydu helps colleges manage students, staff, alerts, events,
                 and academic data effortlessly. One secure platform to access
                 everything, anytime, anywhere.
@@ -196,24 +196,25 @@ export default function HeroSection() {
 
                 {/* BUTTONS (SIDE BY SIDE like screenshot) */}
                 <div className="mt-6 flex gap-4 justify-center w-full">
-                <Button variant="primary" className="w-[140px]">
+                <Button variant="primary" className="w-35">
                     HEYDU
                 </Button>
 
-                <Button variant="outline" className="w-[140px]">
+                <Button variant="outline" className="w-35">
                     C-RAP
                 </Button>
                 </div>
 
+        
             </div>
 
             {/* ================= TRUSTED SECTION ================= */}
-          <div className="mt-16 w-full">
+          <div className="mt-10 left-0 w-full z-10  ">
 
-            <div className="bg-white  shadow-lg py-8 px-6">
+            <div className="bg-white shadow-lg py-10 px-6">
 
               {/* Title */}
-              <h3 className="text-[16px] font-semibold text-center text-gray-700 mb-6">
+              <h3 className="text-[16px] font-semibold text-center text-gray-700 mb-5  ">
                 Trusted by Leading Institutions
               </h3>
 

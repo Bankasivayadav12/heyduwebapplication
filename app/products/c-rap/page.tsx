@@ -68,10 +68,10 @@ export default function CrapPage() {
 
         {/* ================= RIGHT FLOW SECTION ================= */}
     
-        <div className="relative flex justify-center items-center h-[500px] ">
+        <div className="relative flex justify-center items-center h-125 ">
 
             {/* Purple Glow Background */}
-            <div className="absolute bottom-0 w-[350px] h-[350px] bg-purple-200 blur-3xl opacity-60"></div>
+            <div className="absolute bottom-0 w-87.5 h-87.5 bg-purple-200 blur-3xl opacity-60"></div>
 
             {/* Center C-RAP Logo */}
             <div className="relative z-10 w-32 h-32 bg-[#5a2ca0] rounded-full flex items-center justify-center shadow-xl">

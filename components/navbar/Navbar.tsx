@@ -1,12 +1,31 @@
 "use client";
 
-import { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
+import { useState, useRef, useEffect } from "react";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="w-full bg-[#f4f3f7] relative z-50">
@@ -20,7 +39,7 @@ export default function Navbar() {
           alt="Heydu Logo"
           width={400}
           height={200}
-          className="w-[260px] h-auto"
+          className="w-65 h-auto"
           priority
         />
 
@@ -30,21 +49,44 @@ export default function Navbar() {
             Home
           </Link>
 
-          <div className="relative group cursor-pointer">
-            <div className="flex items-center gap-1 hover:text-purple-600 transition">
-              Products
-              <span className="text-xs">▾</span>
-            </div>
+          <div ref={dropdownRef} className="relative">
+      
+      {/* Trigger */}
+      <div
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1 cursor-pointer hover:text-purple-600 transition"
+      >
+        Products
+        <span
+          className={`text-xs transition-transform duration-300 ${
+            open ? "rotate-180" : ""
+          }`}
+        >
+          ▾
+        </span>
+      </div>
 
-            <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-3 w-44 py-2">
-              <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                HEYDU
-              </Link>
-              <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                C-RAP
-              </Link>
-            </div>
-          </div>
+      {/* Dropdown */}
+      {open && (
+        <div className="absolute bg-white shadow-lg rounded-md mt-3 w-44 py-2 z-50">
+          <Link
+            href="/products/heydu"
+            className="block px-4 py-2 hover:bg-gray-100"
+            onClick={() => setOpen(false)}
+          >
+            HEYDU
+          </Link>
+
+          <Link
+            href="/products/c-rap"
+            className="block px-4 py-2 hover:bg-gray-100"
+            onClick={() => setOpen(false)}
+          >
+            C-RAP
+          </Link>
+        </div>
+      )}
+    </div>
 
           <Link href="/about" className="hover:text-purple-600 transition">
             About
@@ -70,7 +112,7 @@ export default function Navbar() {
             alt="Heydu Logo"
             width={300}
             height={200}
-            className="w-[150px] h-auto"
+            className="w-37.5 h-auto"
           />
 
           <button

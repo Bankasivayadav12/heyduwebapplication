@@ -19,7 +19,7 @@ export default function JobPathSection() {
 
               {/* Background Image Circle */}
               <div
-                className="relative w-[280px] h-[280px] md:w-[420px] md:h-[420px]
+                className="relative w-70 h-70 md:w-105 md:h-105
                             rounded-3xl shadow-lg bg-center bg-cover bg-no-repeat"
                 style={{
                     backgroundImage: "url('/c-rap/j-1.png')",

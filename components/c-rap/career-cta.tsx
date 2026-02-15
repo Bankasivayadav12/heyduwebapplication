@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function CareerCTA() {
   return (
     <section className="relative w-full overflow-hidden 
-                        bg-gradient-to-r from-[#6E3BB6] to-[#6A36B0] 
+                        bg-linear-to-r from-[#6E3BB6] to-[#6A36B0] 
                         py-10">
 
       {/* ================= WAVE BACKGROUND LINES ================= */}
@@ -48,7 +48,7 @@ export default function CareerCTA() {
         <div className="flex items-center gap-20">
 
           {/* Curved Arrow Image */}
-          <div className="relative w-[120px] h-[60px] hidden md:block">
+          <div className="relative w-30 h-15 hidden md:block">
             <Image
               src="/c-rap/ARROW.png"   // <-- your arrow image path
               alt="Curved Arrow"

@@ -17,7 +17,7 @@ export default function ReportsSection() {
             <div className="relative flex justify-center items-center">
 
               {/* 🔥 Soft Abstract Blob Background (CSS Based) */}
-              <div className="absolute w-[420px] h-[320px] 
+              <div className="absolute w-105 h-80 
                             bg-[#c18cf3]
                               rounded-[60%_40%_50%_50%/50%_60%_40%_50%]
                               opacity-90">

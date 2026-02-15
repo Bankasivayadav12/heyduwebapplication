@@ -76,7 +76,7 @@ export default function PowerfulFeatures() {
             key={index}
             className={`rounded-2xl p-8 shadow-sm transition duration-300 hover:shadow-lg
               ${item.bg}
-              ${item.border ? "border-2 border-[#2f57c7]" : ""}
+              
             `}
           >
             {/* ICON */}
@@ -100,7 +100,7 @@ export default function PowerfulFeatures() {
             </h3>
 
             {/* DESCRIPTION */}
-            <p className="text-[14px] text-gray-600 leading-[24px]">
+            <p className="text-[14px] text-gray-600 leading-6">
               {item.description}
             </p>
           </div>
